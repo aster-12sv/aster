@@ -19,9 +19,9 @@
       padding: 30px 10px;
     }
     nav {
-  background-color: #1e3a8a; /* Azul mais escuro */
-  text-align: center;
-  padding: 10px 0;
+      background-color: #1e3a8a;
+      text-align: center;
+      padding: 10px 0;
     }
     nav a {
       color: white;
@@ -133,7 +133,6 @@
     <tr><td>Contratos</td><td>A partir de 2.500</td></tr>
     <tr><td>Outros</td><td>Consultar</td></tr>
     <tr><td>Documentos de Urgência</td><td>Consultar</td></tr>
-
   </table>
   <p>Prazo: 2 a 5 dias úteis. Pagamento via transferência ou PayPay.</p>
   <p>Taxa de envio pelo correio: Letter Pack (¥430 ou ¥600).</p>
@@ -149,33 +148,27 @@
 <section id="contato">
   <h2>Contato</h2>
   <p>Email: <a href="mailto:astertraducoes@hotmail.com">astertraducoes@hotmail.com</a></p>
-  <p>Instagram: <a href="https://www.instagram.com/astertraducoes/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer"> @astertraducoes </a></p>
-
+  <p>Instagram: <a href="https://www.instagram.com/astertraducoes/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">@astertraducoes</a></p>
 
   <h3>Envie sua mensagem</h3>
-<form action="https://formsubmit.co/astertraducoes@hotmail.com" method="POST">
-  <!-- スパム防止の CAPTCHA 無効化（任意） -->
-  <input type="hidden" name="_captcha" value="false">
+  <form action="https://formsubmit.co/astertraducoes@hotmail.com" method="POST">
+    <!-- CAPTCHA無効化（任意） -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- 送信完了後のリダイレクト先（任意） -->
+    <input type="hidden" name="_next" value="https://seusite.com/thank-you.html">
 
-  <!-- 送信完了後のリダイレクト先（任意） -->
-  <input type="hidden" name="_next" value="https://あなたのサイト.com/thank-you.html">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
 
-  <!-- ユーザー入力フィールド -->
-  <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" required>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
 
-  <label for="email">E-mail:</label>
-  <input type="email" id="email" name="email" required>
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-  <label for="mensagem">Mensagem:</label>
-  <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-  <button type="submit">Enviar</button>
-</form>
-
-</form>
-
-
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
 <footer>
   <p>&copy; 2025 Áster Traduções - Todos os direitos reservados.</p>
