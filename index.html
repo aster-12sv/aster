@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Áster Traduções - Japonês - Português</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-   <meta name="description" content="Áster Traduções oferece tradução de documentos Japonês-Português em Komaki, Aichi">
+  <meta name="description" content="Áster Traduções oferece tradução de documentos Japonês-Português em Komaki, Aichi">
   <meta name="keywords" content="tradução japonês português, tradução de documentos, tradutor Japão, tradução oficial, visto japonês, tradução certidão">
   <meta name="author" content="Áster Traduções">
 
@@ -17,66 +17,59 @@
       color: #333;
     }
     header {
-      background-color: #0a2540;
+      background: url('your-image.jpg') no-repeat center center/cover;
       color: #ffffff;
       text-align: center;
-      padding: 30px 10px;
+      padding: 80px 10px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     }
     nav {
       background-color: #1e3a8a;
       text-align: center;
-      padding: 10px 0;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #005bb5;
+      padding: 5px 10px;
+      border-radius: 5px;
     }
     section {
-      padding: 30px 20px;
+      padding: 40px 30px;
       max-width: 900px;
-      margin: auto;
+      margin: 50px auto;
       background-color: white;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
+    h2 {
+      font-size: 1.8rem;
+      color: #1e3a8a;
+      margin-bottom: 15px;
     }
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-    }
-    th {
-      background-color: #eee;
-    }
-    form {
-      max-width: 600px;
-      margin: auto;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-family: inherit;
-      margin-bottom: 10px;
+    input:focus, textarea:focus {
+      border-color: #1e3a8a;
+      box-shadow: 0 0 5px rgba(30, 58, 138, 0.5);
     }
     button {
       background-color: #1e3a8a;
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
       cursor: pointer;
       border-radius: 5px;
       font-size: 1rem;
+      transition: background-color 0.3s ease;
     }
     button:hover {
       background-color: #005bb5;
@@ -88,6 +81,17 @@
     }
     html {
       scroll-behavior: smooth;
+    }
+    @media (max-width: 768px) {
+      nav {
+        padding: 10px 0;
+      }
+      nav a {
+        font-size: 14px;
+      }
+      section {
+        padding: 20px 15px;
+      }
     }
   </style>
 </head>
@@ -109,18 +113,14 @@
 <section id="sobre">
   <h2>Sobre Nós</h2>
   <p>Somos especialistas em <strong>traduções do Japonês para o Português</strong> e vice-versa, com foco em documentos oficiais como certidões, cartões de residência, comprovantes para visto e históricos escolares.</p>
-  <p>Atuamos com responsabilidade, qualidade e agilidade para a comunidade brasileira no Japão.</p>
-  <p><strong>Entregamos para todo o Japão</strong>, em formato <strong>PDF por e-mail</strong> ou por <strong>correio físico</strong>, conforme sua necessidade.</p>
 </section>
 
 <section id="servicos">
   <h2>Serviços</h2>
   <ul>
-    <li>Certidões (nascimento, casamento, etc.)</li>
-    <li>Documentos escolares</li>
-    <li>Comprovantes para visto</li>
-    <li>Comprovantes para naturalização</li>
-    <li>Outros documentos oficiais</li>
+    <li><i class="fas fa-certificate"></i> Certidões (nascimento, casamento, etc.)</li>
+    <li><i class="fas fa-school"></i> Documentos escolares</li>
+    <li><i class="fas fa-passport"></i> Comprovantes para visto</li>
   </ul>
 </section>
 
@@ -129,47 +129,12 @@
   <table>
     <tr><th>Tipo de Documento</th><th>Preço (a partir de)</th></tr>
     <tr><td>Certidão de Nascimento </td><td>¥2.000</td></tr>
-    <tr><td>Certidão de Casamento </td><td>¥2.000</td></tr>
-    <tr><td>Certidão de Estado Civil </td><td>¥2.000</td></tr>
-    <tr><td>Atestado de Nacionalidade </td><td>¥2.000</td></tr>
-    <tr><td>Histórico escolar</td><td>¥2.000</td></tr>
-    <tr><td>Diploma</td><td>¥2.000</td></tr>
-    <tr><td>Contratos</td><td>A partir de 2.500</td></tr>
-    <tr><td>Outros</td><td>Consultar</td></tr>
-    <tr><td>Documentos de Urgência</td><td>Consultar</td></tr>
   </table>
-  <p>Prazo: 2 a 5 dias úteis. Pagamento via transferência ou PayPay.</p>
-  <p>Taxa de envio pelo correio: Letter Pack (¥430 ou ¥600).</p>
-</section>
-
-<section id="certificado">
-  <h2>Certificação</h2>
-  <ul>
-    <li>Assinatura do tradutor (+¥500)</li>
-  </ul>
 </section>
 
 <section id="contato">
   <h2>Contato</h2>
   <p>Email: <a href="mailto:astertraducoes@hotmail.com">astertraducoes@hotmail.com</a></p>
-  <p>Instagram: <a href="https://www.instagram.com/astertraducoes/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">@astertraducoes</a></p>
-
-  <h3>Envie sua mensagem</h3>
-  <form action="https://formsubmit.co/astertraducoes@hotmail.com" method="POST">
-    <!-- CAPTCHA無効化（任意） -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required>
-
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
 </section>
 
 <footer>
